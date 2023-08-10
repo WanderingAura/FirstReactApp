@@ -35,6 +35,7 @@ function App() {
             id="firstName"
             name="firstName"
             value={formData.firstName}
+            placeholder="First Name"
             onChange={handleChange}
             required
           />
@@ -45,6 +46,7 @@ function App() {
             type="text"
             id="lastName"
             name="lastName"
+            placeholder="Last Name"
             value={formData.lastName}
             onChange={handleChange}
             required
@@ -56,6 +58,7 @@ function App() {
             type="email"
             id="email"
             name="email"
+            placeholder="Email"
             value={formData.email}
             onChange={handleChange}
             required
