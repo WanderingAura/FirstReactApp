@@ -2,6 +2,8 @@ import "./styles.css";
 
 import React, { useState } from 'react';
 import './App.css';
+import NavigationBar from "./NavBar";
+
 
 function App() {
   const [formData, setFormData] = useState({
@@ -26,9 +28,10 @@ function App() {
 
   return (
     <div className="App">
+      <NavigationBar />
       <h1>Sign-up for my Newsletter!</h1>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className={`form-group ${formData.firstName && 'filled'}`}>
           <label htmlFor="firstName">First Name</label>
           <input
             type="text"
