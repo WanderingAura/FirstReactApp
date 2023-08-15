@@ -2,15 +2,17 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: #60a2df;
 }
 
 /* Rest of your styles */
 
 .App {
   text-align: center;
-  padding: 0;
+  padding-bottom: 20px;
   margin: 0;
-  background-color: #60a2df; /* Background color for the entire form */
   font-family: Georgia, "Times New Roman", Times, serif; /* Font family for the entire form */
   color: #333; /* Text color for the entire form */
 }
